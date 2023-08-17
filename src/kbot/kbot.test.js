@@ -17,9 +17,10 @@ kbot = new Kbot("ES");
 console.log(kbot.saludar("Juan", 20)=="Buenas noches Juan");*/
 
 describe("Saludor", () => {
+    
     it("deberia Saludar a Andrés en idioma default", () => {
         let kbot = new Kbot();
-        let resultado = kbot.saludar("Andrés") 
+        let resultado = kbot.saludar("Andrés",8) 
         expect(resultado).toEqual("Buenos días Andrés");
     });
 
